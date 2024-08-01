@@ -1,0 +1,12 @@
+services:
+  starchild-wiki:
+    image: dokuwiki/dokuwiki:stable
+    container_name: starchild_wiki
+    user: ${USER}
+    ports:
+      - ${WEB_PORT}
+    volumes:
+      - ${STORAGE_VOL}:/storage
+
+networks:
+  starchild_net:
