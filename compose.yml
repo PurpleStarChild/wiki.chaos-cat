@@ -7,6 +7,8 @@ services:
       - ${WEB_PORT}
     volumes:
       - ${STORAGE_VOL}:/storage
+    networks:
+      - starchild_net
 
 networks:
   starchild_net:
